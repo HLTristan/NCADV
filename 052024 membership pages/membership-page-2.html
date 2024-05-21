@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- 
+        
+        This is from page 
+        https://hotlinetest.wpengine.com/get-involved/membership-04242024-1654/
+        This is the second page for the membership push.
+    
+    -->
+
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+      }
+      .button-benefits {
+        position: absolute;
+        bottom: -10;
+        left: 50%;
+        transform: translateX(-50%);
+
+        background-color: #4e3059;
+        border-radius: 20px;
+
+        color: #fff;
+        font-size: 1em;
+        font-weight: 700;
+
+        padding: 0.75em 1.5em;
+        text-decoration: none;
+      }
+
+      .join-now {
+        background-color: #4e3059;
+        border-radius: 20px;
+
+        color: #fff;
+        font-size: 0.75em;
+        font-weight: 700;
+
+        padding: 7px;
+        text-decoration: none;
+        margin-bottom: 11px;
+      }
+
+      .join-now:hover {
+        transform: scale(1.05);
+        background-color: #a83e92;
+      }
+
+      .pricing-table {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        gap: 16px;
+        /* margin: 0 45px 0 45px; */
+        padding: var(--sx);
+      }
+      .pricing-column {
+        position: relative;
+        flex: 1;
+        text-align: center;
+        padding: 20px;
+        transition: all 0.3s;
+        border-radius: 17px; /* Rounded corners */
+        background-color: white;
+        border: 9px solid #532e5c;
+      }
+
+      .pricing-column:hover {
+        transform: scale(1.05);
+      }
+      .pricing-header {
+        background-color: #f2f2f2;
+        padding: 11px;
+        border-radius: 11px;
+        border: 9px;
+        border-color: #532e5c;
+      }
+      .pricing-plan {
+        margin-top: 20px;
+        margin-bottom: 20px;
+      }
+      .price {
+        font-size: 1.7em;
+        font-weight: bold;
+        margin-bottom: 10px;
+      }
+
+      .table-features {
+        font-size: 1em;
+        display: block;
+        text-align: left;
+        line-height: 21px;
+        margin-top: 21px;
+      }
+      .click-here {
+        display: block;
+        font-size: 0.85em;
+        text-align: left;
+        text-decoration: none;
+      }
+
+      @media screen and (max-width: 768px) {
+        .pricing-column {
+          flex-basis: 100%;
+        }
+      }
+
+      /* TOOL TIP */
+
+      .tooltip {
+        position: relative;
+        display: inline-block;
+        border-bottom: 2px dotted black;
+      }
+
+      .tooltip .tooltip-text {
+        visibility: hidden;
+        width: 269px;
+        background-color: #532e5c;
+
+        color: #fff;
+        font-size: 1em;
+        text-align: left;
+
+        border-radius: 6px;
+        padding: 10px 15px 10px 15px;
+
+        /* Position the tooltip */
+        position: absolute;
+        z-index: 1;
+      }
+
+      .tooltip:hover .tooltip-text {
+        visibility: visible;
+        top: -40px;
+        left: -50%;
+      }
+    </style>
+  </head>
+  <body>
+
+    <div class="pricing-table">
+        <!-- PRICING COLUMN 1 Individuals -->
+        <div class="pricing-column">
+          <div class="pricing-header">
+            <h3>Individuals</h3>
+          </div>
+          <div class="pricing-plan">
+            <span class="price">$119</span>
+            <span>/Annually</span>
+          </div>
+          <div class="join-now">
+            <h3>Join Now!</h3>
+          </div>
+  
+          <div class="table-features">
+            <h4>Who should join:</h4>
+            &#10003; Individuals with a personal interest in or connection to the
+            issue
+            <br /><br />
+            &#10003; Individuals working with domestic violence survivors whose
+            organizations are unable to join at other levels
+          </div>
+          <p>
+            <a class="click-here" href="#memberships-individual">
+              Click here to see all member benefits available to Individuals
+            </a>
+          </p>
+        </div>
+        <!-- price column end -->
+        
+  
+        <!-- PRICING COLUMN 3 -->
+  
+        <div class="pricing-column">
+          <div class="pricing-header">
+            <h3>Institutional Affiliate</h3>
+          </div>
+          <div class="pricing-plan">
+            <span class="price">$839</span>
+            <span>/Annually</span>
+          </div>
+          <div class="join-now">
+            <h3>Join Now!</h3>
+          </div>
+  
+          <div class="table-features">
+            <h4>Who should join:</h4>
+            &#10003; Organizations that do not provide direct services but support
+            victims and survivors of violence in other ways
+            <br /><br />
+            &#10003; National Organizations
+            <br /><br />
+            &#10003; State Coalitions
+            <br /><br />
+            &#10003; Educational Entities
+            <br /><br />
+            &#10003; Corporations
+          </div>
+          <p>
+            <a class="click-here" href="#memberships-organizations"
+              >Click here to see all member benefits available to Institutions
+            </a>
+          </p>
+        </div>
+        <!-- pricing column 3 end-->
+        
+        
+        <!-- PRICING COLUMN 2 -->
+        <div class="pricing-column">
+          <div class="pricing-header">
+            <h3>Direct Service Organizations</h3>
+          </div>
+          <div class="pricing-plan">
+            <span class="price">$419</span>
+            <span>/Annually</span>
+          </div>
+          <div class="join-now">
+            <h3>Join Now!</h3>
+          </div>
+  
+          <div class="table-features">
+            <h4>Who should join:</h4>
+            &#10003; Organizations whose primary mission is to provide <div class="tooltip">direct
+            services<span class="tooltip-text">The Hotline defines direct services to victims or survivors of domestic violence, sexual assault, or other forms of abuse as crisis counseling and assistance, emergency services, legal assistance, emergency shelter, housing assistance, criminal justice support, and/or advocacy, support groups, etc.</span>
+  </div> to victims and survivors of domestic violence, sexual assault, or other forms of abuse
+            <br /><br />
+            &#10003; Tribes/Tribal Organizations
+          </div><p><a class="click-here" href="#memberships-affiliate"
+              >Click here to see all member benefits available to Direct Service
+          Providers</a></p>
+        <!-- price column end -->
+      </div>
+  </body>
+</html>
