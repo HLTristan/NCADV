@@ -11,8 +11,10 @@
     <!-- 
         
         This is from page 
-        https://hotlinetest.wpengine.com/test-page-04252024/
-        The columng boxes look nice on here and have the correct width.
+
+        Try this for centering
+        https://www.w3schools.com/csS/tryit.asp?filename=trycss_align_transform
+        
     
     -->
 
@@ -84,7 +86,24 @@
         border-radius: 11px;
         border: 9px;
         border-color: #532e5c;
+        height: 99px;
       }
+
+      .pricing-center {
+        height: 200px;
+        position: relative;
+        border: 3px solid green;
+      }
+
+      .pricing-center p {
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+      }
+
       .pricing-plan {
         margin-top: 20px;
         margin-bottom: 20px;
@@ -118,7 +137,35 @@
     </style>
   </head>
   <body>
+    <!-- Embedd Content 1 Begin -->
     <div class="wrap3">
+      <div class="wrap3-main">
+        <div class="wrap3-inner">
+          <h2 class="header3-title" reveal-initialized="" revealed="">
+            Join The Hotline’s Membership community.
+          </h2>
+          <p class="iconed2" reveal-initialized="" revealed="">
+            <i class="icon-star"></i> <span>Learn. Connect. Grow. </span>
+          </p>
+
+          <p>
+            The Hotline Membership community provides a platform for individuals
+            to stay informed, share information, and connect with like-minded
+            individuals dedicated to supporting victims and survivors of
+            domestic violence. Develop your network, stay current on trends,
+            build your community, and more!
+          </p>
+          <!-- <span class="cta1-line">
+            <a
+              href="https://thehotline.circle.so/"
+              id="thl-messaging-btn-bar"
+              class="button1"
+              ><span>Login to The Hotline Member Community Platform</span></a
+            >
+          </span> -->
+        </div>
+      </div>
+
       <div class="wrap3-side">
         <div class="sticky1" reveal="1+/0">
           <div class="card1 natural">
@@ -173,44 +220,33 @@
                 /></a>
               </p>-->
             <div class="card1-footer -t:4">
-              <p>When survivors are ready to speak, we’re here to listen.</p>
+              <!-- Original Content:  <p>When survivors are ready to speak, we’re here to listen.</p>  -->
+              <span class="cta1-line">
+                <a
+                  href="https://thehotline.circle.so/"
+                  id="thl-messaging-btn-bar"
+                  class="button1"
+                  ><span
+                    >Login to The Hotline Member Community Platform</span
+                  ></a
+                >
+              </span>
             </div>
           </div>
         </div>
       </div>
-      <div class="wrap3-main">
-        <div class="wrap3-inner">
-          <h2 class="header3-title" reveal-initialized="" revealed="">
-            Join The Hotline’s Membership community.
-          </h2>
-          <p class="iconed2" reveal-initialized="" revealed="">
-            <i class="icon-star"></i> <span>Learn. Connect. Grow. </span>
-          </p>
-
-          <p>
-            The Hotline Membership community provides a platform for individuals
-            to stay informed, share information, and connect with like-minded
-            individuals dedicated to supporting victims and survivors of
-            domestic violence. Develop your network, stay current on trends,
-            build your community, and more!
-          </p>
-          <span class="cta1-line">
-            <a
-              href="https://thehotline.circle.so/"
-              id="thl-messaging-btn-bar"
-              class="button1"
-              ><span>Login to The Hotline Member</span></a
-            >
-          </span>
-        </div>
-      </div>
     </div>
+    <!-- Embedd Content 1 End -->
 
+    <!-- Embedd Content 2 Begin -->
     <div class="pricing-table">
       <!-- PRICING COLUMN 1 Individuals -->
       <div class="pricing-column">
         <div class="pricing-header">
-          <h3>Individuals</h3>
+          <div class="pricing-center">
+            <p>I am vertically and horizontally centered.</p>
+            <h3>Individuals</h3>
+          </div>
         </div>
         <div class="pricing-plan">
           <span class="price">$119</span>
